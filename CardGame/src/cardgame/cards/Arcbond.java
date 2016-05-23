@@ -88,7 +88,6 @@ public class Arcbond extends AbstractCard{
 
         @Override
         public void inflictDamage(int dmg) {
-            decorated.inflictDamage(dmg);
             for(DecoratedCreature dc : CardGame.instance.getCurrentPlayer().getCreatures())
                 dc.inflictDamage(dmg);
             for(DecoratedCreature dc : CardGame.instance.getCurrentAdversary().getCreatures()){
